@@ -27,3 +27,21 @@ Question 03
 Why is "time.ticks_diff(toc, tic)" used to determine elapsed time instead of "toc - tic"?  
 
 <b>Answer: in MicroPython, ticks.ms(), the method used to assign values to toc and tic, can wrap around upon reaching a certain number Tick MAX. Subtracting tic from toc as proposed would lead to incorrect answers as result of this wrap around.</b>
+
+<h1>Excercise 2</h1>
+
+Question 01
+Why do you think we would use a file (e.g. JSON file) for parameter storage instead of accepting the parameters as user input(), especially on an embedded system?  
+
+<b>Answer:To reduce the need for external input or external storage accessing. Since the values are already stored in the system, it can quickly access the file internally. In an embedded system, this is even more crucial since the system and its internal components are optimized for quick internal communication.</b>
+
+Question 02
+Why might we prefer to use a JSON file to store parameters instead of hard-coding values in the Python script?  
+
+<b>Answer: We can alter the parameters without running the risk of changing the code. Might be faster since the board doesn't have to recheck the entire code since it hasnt changed, and just needs to refresh its view of the JSON file</b>
+
+Question 03
+Why didn't the exercise02.py code use os.path.isfile, that is, why did I write the "is_regular_file()" function?
+
+<b>Answer:</b>
+

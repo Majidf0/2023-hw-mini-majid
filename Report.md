@@ -51,4 +51,7 @@ Question 1
 
 Suppose I want to add additional code that requires me to increase sample time, to allow more time for the additional code to execute. What is the tradeoff when I increase sample time relative to the "dot_dash_threshold" value? Try this by increasing "sample_ms" in exercise3.json on the Pico. The effect should be quite noticeable. 
 
-<b>Answer:  </b>
+<b>Answer: The accuracy of the recording drops signifigantly. This is because of the increased sleep time, which can misread button inputs or miss them</b>
+
+<h1>Excercise 4</h1>  
+

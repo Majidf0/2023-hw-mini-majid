@@ -53,6 +53,6 @@ Suppose I want to add additional code that requires me to increase sample time, 
 
 <b>Answer: The accuracy of the recording drops signifigantly. This is because of the increased sleep time, which can misread button inputs or miss them</b>
 
-<h1>Excercise 4</h1>  
+<h1>Excercise 4 + Projects 1 & 2 (Single & Multithreaded)</h1>  
 
 Check top-level "Answers" folder.

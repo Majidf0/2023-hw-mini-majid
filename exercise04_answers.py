@@ -13,7 +13,7 @@ adc = machine.ADC(28)
 blink_period = 0.1
 
 #Below code obtained with help from ChatGPT
-with open("exercise04.json", "r") as json_file:
+with open("exercise04_answers.json", "r") as json_file:
     data = json.load(json_file)
     
 max_bright = data["max_bright"]
